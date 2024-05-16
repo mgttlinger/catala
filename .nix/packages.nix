@@ -1,6 +1,6 @@
 { ocamlPackages, fetchurl }:
 
-ocamlPackages.overrideScope' (self: super: {
+ocamlPackages.overrideScope (self: super: {
   alcotest = (super.alcotest.override {}).overrideAttrs (_: {
     doCheck = false;
   });
