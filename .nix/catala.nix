@@ -18,7 +18,7 @@
 , re
 , sedlex
 , ubase
-, unionfind
+, unionFind
 , visitors
 , z3
 , zarith
@@ -58,7 +58,7 @@ buildDunePackage {
     re
     sedlex
     ubase
-    unionfind
+    unionFind
     visitors
     z3
     zarith
