@@ -27,6 +27,7 @@
 , cohttp-lwt-unix
 , ocolor
 , dune-build-info
+, ninja_utils
 }:
 
 buildDunePackage {
@@ -39,7 +40,7 @@ buildDunePackage {
 
   duneVersion = "3";
 
-  nativeBuildInputs = [ cppo menhir ocaml-crunch ];
+  nativeBuildInputs = [ cppo menhir ocaml-crunch js_of_ocaml ];
 
   propagatedBuildInputs = [
     alcotest
@@ -66,6 +67,7 @@ buildDunePackage {
     cohttp-lwt-unix
     ocolor
     dune-build-info
+    ninja_utils
   ];
 
   # Currently there is no unit tests in catala and Cram tests are handled by clerk
